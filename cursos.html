@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Live University | Cursos</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/icon-fonts.css" type="text/css" />
+  <link href="styles/cursos.css" type="text/css" rel="stylesheet">
 </head>
 <body>
   <nav class="side-menu">
@@ -14,12 +17,14 @@
     </ul>
   </nav>
   <div class="content-wrapper">
-    <header>
-      <strong>Ricardo Barato</strong>
-      <small>Live university</small>
+    <header class="user-header">
+      <div class="user-info">
+        <strong>Ricardo Barato</strong>
+        <small>Live university</small>
+      </div>
       <!-- representacao do espaco para foto do perfil -->
       <div class="avatar"></div>
-      <!-- TODO INSERIR SETA PARA BAIXO (FONT AWESOME OU SVG) -->
+      <i class="fas fa-chevron-down"></i>
     </header>
     <main class="course-wrapper">
       <h1>Cursos</h1>
@@ -28,7 +33,7 @@
         <!-- TODO INSERIR ICONE DA LUPA (FONT AWESOME OU SVG) -->
       </div>
       <ul class="course-list">
-        <lil>
+        <li>
           <div class="course-date">
             <span class="date-day">03</span>
             <span class="date-month">AGO</span>
@@ -42,7 +47,7 @@
             <span><strong>15</strong>/30</span>
           </div>
           <a href="#">ABRIR</a>
-        </lil>
+        </li>
       </ul>
     </main>
   </div>
