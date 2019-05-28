@@ -15,13 +15,16 @@ li {
 body {
   background-color: rgba(0,0,0,.05);
   display: flex;
-  padding: 20px;
-  height: 100vh;
+  padding: 50px 20px;
+  height: auto;
 }
 
 .side-menu {
   width: 15%;
 }
+
+/* SIDE MENU */
+
 
 
 /* MAIN APPLICATION SECTION */
@@ -30,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .user-header {
@@ -68,12 +72,14 @@ body {
 .course-wrapper {
   background-color: #FFF;
   border-radius: 5px;
-  height: 75%;
-  border: 1px solid rgba(0,0,0,.3);
+  border: 1.5px solid rgba(0,0,0,.1);
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  margin: 20px;
 }
 
 .course-wrapper h1 {
@@ -104,4 +110,87 @@ body {
 
 .search-wrapper input[type="text"]::placeholder {
   color: rgba(0,0,0,.3)
+}
+
+/* course list element */
+.course-list {
+  height: fit-content;
+  padding: 20px 30px;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.course a {
+  text-decoration: none;
+  color: #469969;
+  font-size: .9rem;
+  background-color: rgba(0,0,0,.08);
+  /* width: 70px;
+  height: 30px; */
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.course-date {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #469969;
+  font-weight: bold;
+}
+
+.course-data {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.course-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.course-details strong {
+  font-size: .8rem;
+  color: rgba(0,0,0,.6);
+}
+
+.course-details small {
+  font-size: .7rem;
+  color: rgba(0,0,0,.4);
+}
+
+.course-participants {
+  color: rgba(0,0,0,.3);
+}
+
+.course-participants small{
+  font-size: .7rem;
+  color: rgba(0,0,0,.5);
+}
+
+.course-participants span {
+  letter-spacing: .3rem;
+}
+
+.part-number {
+  color: #e0ac53;
+  font-size: 1.9rem;
+  font-weight: lighter;
 }
