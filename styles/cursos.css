@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Helvetica', sans-serif;
+  text-decoration: none;
 }
 
 li {
@@ -61,7 +62,7 @@ body {
   font-weight: bold;
 }
 
-.odd-item i {
+.odd-item i, .odd-item.selected {
   color: #e0ac53;
   border-color: #e0ac53;
 }
