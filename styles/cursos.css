@@ -43,6 +43,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  cursor: pointer;
+}
+
+.menu-options span {
+  font-size: .7rem;
+  color: rgba(0,0,0,.5);
 }
 
 .menu-options li > * {
@@ -52,6 +58,17 @@ body {
 .menu-options li.selected {
   border-left: 7px solid;
   background-color: rgba(0,0,0,.03);
+  font-weight: bold;
+}
+
+.odd-item i {
+  color: #e0ac53;
+  border-color: #e0ac53;
+}
+
+.even-item i, .even-item.selected {
+  color: #469969;
+  border-color: #469969;
 }
 
 
@@ -115,6 +132,7 @@ body {
   color: #e0ac53;
   font-weight: normal;
   font-size: 1.6rem;
+  height: 90px;
 }
 
 .search-wrapper {
@@ -160,7 +178,7 @@ body {
   text-decoration: none;
   color: #469969;
   font-size: .9rem;
-  background-color: rgba(0,0,0,.08);
+  background-color: rgba(0,0,0,.05);
   /* width: 70px;
   height: 30px; */
   padding: 10px 25px;
@@ -173,7 +191,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
