@@ -48,11 +48,66 @@ body {
 
 
 .inactive {
-  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+
+.inactive * {
+  visibility: hidden;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
 }
 
 .active {
-  display: flex;
+  animation-duration: .6s;
+  animation-name: slideDown;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  from {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  to {
+    display: flex;
+    visibility: visible;
+    padding: 20px 30px;
+    margin-top: 20px;
+    height: 220px;
+    max-height: 20020px;
+    overflow: initial;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    display: flex;
+    visibility: visible;
+    padding: 20px 30px;
+    margin-top: 20px;
+    height: 220px;
+    overflow: initial;
+  }
+
+  to {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 .checklist-wrapper {
@@ -62,6 +117,12 @@ body {
   margin-top: 20px;
   background-color: rgba(0,0,0,.02);
   border-left: 5px solid #e0ac53;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+.hide {
+  animation: slideUp .6s forwards;
 }
 
 .checklist-item {
