@@ -129,6 +129,10 @@ body {
   margin: 20px;
 }
 
+.content-wrapper > * {
+  margin-bottom: 100px;
+}
+
 .course-wrapper h1 {
   color: #e0ac53;
   font-weight: normal;

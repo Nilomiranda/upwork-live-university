@@ -1,19 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
 body {
-  height: 100vh;
+  height: 100%;
+  min-height: 150vh;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.content-wrapper > * {
+  margin-bottom: 100px;
 }
 
 .course-info {
   background-color: #fff;
+  border: 1.5px solid rgba(0,0,0,.1);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 30px;
+  WIDTH: 100%;
+  margin: 20px;
 }
 
 .course-info h1 ,.course-info h2 {
@@ -27,9 +43,60 @@ body {
 .course-info h2 {
   font-size: 0.9rem;
   padding: 0 20px;
+  padding-bottom: 50px;
 }
 
-.checklist-options button, .colab-top-bar button {
+.checklist-wrapper {
+  /* height: 150px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: rgba(0,0,0,.02);
+  border-left: 5px solid #e0ac53;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.checklist-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.item-info label {
+  font-size: 0.85rem;
+  color: rgba(0,0,0,.7);
+}
+
+.checklist-instruction {
+  font-size: 0.75rem;
+  color: rgba(0,0,0,.4);
+}
+
+.custom-checkbox {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  border: 2px solid rgba(0,0,0,.1);
+}
+
+.checklist-item input:checked ~ .custom-checkbox {
+  background-color: #e0ac53;
+  border: 2px solid #b79863;
+}
+
+button {
   background-color: rgba(0,0,0,.05);
   padding: 7px 20px;
   border: none;
@@ -56,6 +123,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 35px 0;
   padding-bottom: 10px;
 }
 
@@ -68,5 +136,37 @@ body {
   display: flex;
   justify-content: space-between;
   width: 400px;
+}
+
+.contributor {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.contr-name {
+  font-size: .8rem;
+}
+
+.contr-email {
+  font-size: .7rem;
+  color: rgba(0,0,0,.4);
+}
+
+.list-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.data-desc {
+  font-size: .6rem;
+  color: rgba(0,0,0,.4);
+}
+
+.contr-data {
+  font-size: .7rem;
+  color: rgba(0,0,0,.5);
 }
 
