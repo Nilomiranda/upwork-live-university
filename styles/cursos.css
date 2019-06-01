@@ -16,7 +16,6 @@ li {
 body {
   background-color: rgba(0,0,0,.05);
   display: flex;
-  /* padding: 50px 20px; */
   height: auto;
 }
 

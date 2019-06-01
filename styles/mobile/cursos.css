@@ -1,0 +1,79 @@
+/* style for mobile */
+
+@media screen and (max-width: 1060px) {
+  body {
+    flex-direction: column;
+  }
+
+  .side-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+  }
+
+  .logo-wrapper {
+    height: 100%;
+    width: 30%;
+  }
+
+  .menu-options {
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+  }
+
+  .menu-options * {
+    margin: 0 10px;
+    height: 100%;
+
+  }
+
+  .odd-item i, .odd-item span, .even-item i, .even-item span {
+    height: fit-content;
+  }
+
+  .odd-item, .even-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-wrapper {
+    align-self: center;
+  }
+
+  .course-wrapper {
+    margin: 0;
+  }
+
+  .course {
+    flex-direction: column;
+    height: fit-content;
+    justify-content: flex-start;
+  }
+
+  .course-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    /* flex: 2; */
+  }
+
+  .course-data * {
+    margin-bottom: 20px;
+  }
+
+  .course-details {
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .course-participants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
