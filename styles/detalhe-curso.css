@@ -8,6 +8,7 @@
 body {
   height: 100%;
   min-height: 150vh;
+  display: flex;
 }
 
 .content-wrapper {
@@ -223,6 +224,12 @@ button {
 .contr-email {
   font-size: .7rem;
   color: rgba(0,0,0,.4);
+}
+
+.contributor-data {
+  display: flex;
+  width: 63%;
+  justify-content: space-between;
 }
 
 .list-data {

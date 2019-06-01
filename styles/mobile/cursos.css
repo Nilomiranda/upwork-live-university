@@ -1,7 +1,7 @@
 /* style for mobile */
 
 @media screen and (max-width: 1060px) {
-  body {
+  /* body {
     flex-direction: column;
   }
 
@@ -35,7 +35,7 @@
   .odd-item, .even-item {
     display: flex;
     align-items: center;
-  }
+  } */
 
   .content-wrapper {
     align-self: center;

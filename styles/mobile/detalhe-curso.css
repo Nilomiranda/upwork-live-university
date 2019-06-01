@@ -1,0 +1,41 @@
+@media screen and (max-width: 1060px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .colab-top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 100px;
+  }
+
+  .contributor {
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+  }
+
+  .contributor-data {
+    width: initial;
+  }
+
+  .button-wrapper {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .content-wrapper {
+    width: 95%;
+  }
+
+  .course-info {
+    margin: 0;
+  }
+}
